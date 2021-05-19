@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="js/jquery-2.1.4.js"></script>
+
+    <!-- <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/jquery.scrollTo.min.js"></script>
+  
+     -->
+    <!--slick-->
+    <link rel="stylesheet" href="js/slick/slick.css">
+    <link rel="stylesheet" href="js/slick/slick-theme.css">
+    <script src="js/slick/slick.min.js"></script>
+    <script src="js/wow/wow.min.js"></script>
+
+    <style>
+        @import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+        body {
+            margin: 0;
+        }
+
+        .parent {
+            width: 800px;
+            padding: 20px;
+            border: 1px solid #000;
+            overflow: hidden;
+        }
+
+        .parent div {
+            float: left;
+            border: 1px solid #000;
+            width: 50%;
+            height: 200px;
+            box-sizing: border-box;
+            text-align: center;
+            line-height: 200px;
+            font-size: 2em;
+        }
+.lfr{
+   animation: ltr 1s linear both;
+
+}
+.rtr{
+    animation: rtr 1s linear both;
+ 
+}
+        @keyframes ltr {
+            0%{
+                opacity: 0;
+                transform: translateX(-100px)
+            }
+            100%{
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        @keyframes rtr {
+            0%{
+                opacity: 0;
+                transform: translateX(150px)
+            }
+            100%{
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+     <img src="http://placehold.it/800x600" alt="">
+    <div class="parent">
+        <div class="left lfr wow">left</div>
+        <div class="right rtr wow">right</div>
+    </div>
+    <img src="http://placehold.it/800x600" alt="">
+    <div class="parent">
+        <div class="left lfr wow">left</div>
+        <div class="right rtr wow">right</div>
+    </div>
+
+
+    <script src="custom.js"></script>
+    <script>
+       wow = new WOW(
+           {
+               boxClass:'wow',
+               mobile: false,
+               offset:150,
+               live:true
+           }
+       )
+       wow.init();
+    </script>
+</body>
+
+
+</html>

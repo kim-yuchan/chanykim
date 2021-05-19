@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../반응형"
+		},
+		{
+			"path": "../../../Downloads/반응형+앱+공식사이트(App+Official+Landing)+-+섹션+단계별+완성본 (1)/섹션 12. 반응형 앱 오피셜 랜딩사이트 제작 - guide 섹션"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "반응형"
+	}
+}

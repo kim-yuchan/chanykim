@@ -1,0 +1,26 @@
+vegas 플러그인 사용
+제이쿼리 플러그인 넣어주고 
+맨마지막은 스타일시트css넣어주고
+ <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="vegas/vegas.min.js"></script>
+    <link rel="stylesheet" href="vegas/vegas.min.css">
+    <link rel="stylesheet" href="style2.css">
+
+js 문법사용
+ $(function(){
+            $('body').vegas({
+                slides:[
+                    {src:'images/church-5985941_1920.jpg'},
+                    {src:'images/ikea-4048229_1280.jpg'},
+                    {src:'images/coffe-2269724_1920.jpg',  <여기는영상포스터
+                        video:{
+                            src:['images/Dubrovnik - 12866.mp4'],
+                            loop:false,
+                            mute:true
+                        }}
+                ],
+                delay:3500
+            })
+        })
+
+375

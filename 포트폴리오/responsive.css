@@ -1,0 +1,410 @@
+@media (max-width:768px) {
+    /* html{
+    scroll-behavior: smooth;
+} */
+
+    /*entire layout*/
+    .cd-section {
+        height: auto;
+    }
+
+    .cd-section>div {
+        height: auto;
+    }
+
+    .content {
+        position: static;
+        /*앱솔루트가 pc버전에서 살아있으니까모바일에선 이렇게*/
+        width: 100%;
+        height: 100%;
+    }
+
+    /* header*/
+    header {
+        transition: 0.5s;
+        z-index: 100;
+    }
+
+    header.active {
+        background-color: white;
+        border-bottom: 1px solid #eee;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .slogan {
+        display: none;
+    }
+
+    .gnb {
+        background-color: white;
+        position: fixed;
+        top: 0;
+        right: -270px;
+        width: 250px;
+        height: 100vh;
+        box-shadow: -5px 0 10px rgba(49, 49, 49, 0.103);
+        transition: 0.5s;
+    }
+
+    .gnb.active {
+        right: 0;
+    }
+
+    .menu {
+        line-height: 40px;
+        margin-top: 60px;
+    }
+
+    .menu a {
+        text-align: right;
+        display: block;
+        padding-right: 20px;
+        color: black;
+        font-size: 20px;
+    }
+
+    /*trigger*/
+    .trigger {
+        display: block;
+        /* border: 1px solid red; */
+        width: 24px;
+        height: 14px;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+    }
+
+    .trigger span {
+        position: absolute;
+        height: 1px;
+        width: 100%;
+        background-color: black;
+        transition: 0.5s;
+    }
+
+    .trigger span:nth-child(1) {
+        top: 0;
+
+    }
+
+    .trigger span:nth-child(2) {
+        top: 50%;
+        width: 80%;
+    }
+
+    .trigger span:nth-child(3) {
+        top: 100%;
+    }
+
+    .trigger.active span:nth-child(1) {
+        top: 50%;
+        transform: rotate(45deg);
+    }
+
+    .trigger.active span:nth-child(2) {
+        top: 50%;
+        width: 80%;
+        opacity: 0;
+    }
+
+    .trigger.active span:nth-child(3) {
+        top: 50%;
+        transform: rotate(-45deg);
+    }
+
+    /* gototop*/
+    .gototop {
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+        border: 1px solid white;
+        display: block;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 50px;
+        transform: translateY(30px);
+        opacity: 0;
+        transition: 0.5s;
+    }
+
+    .gototop.active {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .btn-hiring {
+        right: 20px;
+        bottom: 20px;
+    }
+
+    /*show hide section*/
+    /* #Home,
+    #About,
+    #Project,
+    #Plan,
+    #Awards,
+    #Location,
+    #Contact {
+        display: none;
+    } */
+
+    /*############################## sectin:home ###############*/
+    .home-inner {
+        height: 100vh;
+    }
+
+    .welcome-text {
+        transform: translate(-50%, -50% scale(0.7));
+        width: 100%;
+    }
+
+    .home-heading {
+        left: 20px;
+    }
+
+    .home-heading span {
+        font-size: 60px;
+    }
+    .opacity-image{
+        background: url(images/Saly-22.png)no-repeat right center;
+        background-size: 800px;
+    }
+    .icon{
+        width: 500px;
+    }
+    .icon span:after{
+        left: -10px;
+    }
+    .home-heading em{
+        font-size: 70px;
+    }
+    .home-heading em {
+        animation-delay: 3.8s;
+    }
+    
+
+    /*############################## sectin:about ##############*/
+    .about-inner {
+        height: auto;
+        padding: 20px;
+        background-color: white;
+       background-size: 400px;
+    }
+    .app-uiposi{
+        display: none;
+    }
+    .about-items {
+        width: 100%;
+        position: static;
+        margin-left: 0;
+        transform: none;
+        text-align: center;
+    }
+
+    .item img {
+        float: none;
+    }
+
+    /*######################## section:skill ##########*/
+    .plan-inner {
+        height: auto;
+        padding: 20px;
+    }
+
+    .plan-feature {
+        width: 100%;
+        position: static;
+        transform: none;
+    }
+
+    .plan-feature>div {
+        height: auto;
+    }
+
+    .plan-info {
+        margin-bottom: 40px;
+    }
+
+    .plan-info>div {
+        float: none;
+        width: 100%;
+    }
+
+    .plan-photo img {
+        width: 100%;
+        height: auto;
+    }
+
+    .plan-heading {
+        padding-right: 0;
+        margin-top: 40px;
+    }
+    .skill-progress {
+        width: 100%;
+        height: 100%;
+    }
+    /*######################## section:awards winner ##########*/
+    .awards-inner {
+        height: auto;
+    }
+
+    .awards-inner>div {
+        float: none;
+        width: 100%;
+    }
+
+    .abuut-heading,
+    .victory-jump img {
+        position: static;
+        transform: none;
+        padding: 40px 20px;
+    }
+
+    .abuut-heading {
+        width: 100%;
+    }
+
+    .victory-jump {
+        text-align: center;
+    }
+
+    /*######################## section:location #################*/
+    .location-inner {
+        height: auto;
+    }
+    .feature {
+        position: relative;
+        width: 100%;
+        transform: none;
+        top: 0;
+        left: 0;
+    }
+    .feature>div{
+        float: none;
+        width: 100%;
+        padding: 20px;
+    }
+    /*######################## section: contact #################*/
+    .contact-inner{
+        height: auto;
+    }
+    .contact-feature{
+        width: 100%;
+        position: static;
+        transform: none;
+    }
+    .contact-feature>div{
+        float: none;
+        width: 100%;
+    }
+    .contact-form h4{
+        font-size: 40px;
+        text-align: center;
+    }
+    .contact-form p{ 
+        text-align: center;
+    }
+    .contact-info{
+      text-align: center;
+    }
+    .contact-info h4{
+        font-size: 24px;
+    }
+    /* ######################## section : project ####################*/
+    .project-inner {
+         height: auto;
+    }
+    .tab>div {
+        float: none;
+        width: 100%;
+    }
+    .view-project {
+        width: 100%;
+    }
+    .project-info{
+        padding: 20px;
+    }
+    .project-info p{
+        position: relative;
+    }
+    .project-info h3{
+        margin-top: 40px;
+    }
+    .detail div{
+        font-size: 13px;
+    }
+    .btn{
+        width: 100%;
+       bottom: -5px;
+    }
+/*################ subpage:hiring ##################*/
+.hiring-main{
+    height: 300px;
+}
+.hiring-heading{
+    width: 100%;
+    top: 65%;
+}
+.hiring-heading h1{
+    font-size: 35px;
+    margin-top: 20px;
+}
+.hiring-info {
+    padding: 20px;
+}
+.hiring-info > div{
+    float: none;
+    width: 100%;
+     height: auto;
+}
+.center-child{
+    position: static;
+    transform: none;
+    width: 100%;
+}
+.hiring-slogan{
+    padding: 50px 0;
+}
+.hiring-slogan p{
+    font-size: 25px;   
+}
+.hiring-slogan p::before{
+    top: -100px;
+}
+.hiring-contact ul{
+    display: block;
+    width: 100%;
+}
+.center-child h2{
+    font-size: 24px;
+}
+
+/*featherlight mobile css*/
+.featherlight .featherlight-close-icon{
+    font-size: 24px;
+    right: 20px;
+  
+}
+
+/*################ subpage:project ##################*/
+.hiring-main.project-main1,
+.hiring-main.project-main2,
+.hiring-main.project-main3 {
+    height: 70vh;
+}
+.hiring-main.project-main1 .hiring-heading h2,
+.hiring-main.project-main2 .hiring-heading h2,
+.hiring-main.project-main3 .hiring-heading h2{
+    font-size: 40px;
+}
+.photo.project-info{
+    font-size: 19px;
+    padding-top: 30px;
+}
+
+}

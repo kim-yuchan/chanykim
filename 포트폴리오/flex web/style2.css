@@ -1,0 +1,19 @@
+/*fontawesome*/
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+
+
+body{ margin: 0; height: 100vh; }
+a{text-decoration: none;}
+button{cursor:pointer; outline: none;}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+
+

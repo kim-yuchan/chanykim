@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"terminal.integrated.allowChords": false,
+		"liveServer.settings.multiRootWorkspaceName": "프로젝트"
+	}
+}

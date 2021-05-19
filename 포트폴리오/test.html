@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+   <script>
+       function work(callback) {
+  setTimeout(() => {
+    const start = Date.now();
+    for (let i = 0; i < 100000000; i++) {}
+    const end = Date.now();
+    console.log(end - start + 'ms');
+    callback(end - start);
+  }, 0);
+}
+console.log("작업시작");
+work((ms) => {
+  console.log("작업끝");
+  console.log(ms + "ms 걸렸다고 해요");
+});
+console.log("다음 작업");
+
+
+
+   </script>
+</body>
+</html>
